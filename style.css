@@ -26,7 +26,6 @@ header {
   top: 0;
   z-index: 1000;
   background: rgba(124, 67, 67, 0.15);
-  border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(6.3px);
   -webkit-backdrop-filter: blur(6.3px);
@@ -171,3 +170,165 @@ header {
 }
 
 /* HOME */ /* HOME */ /* HOME */ /* HOME */ /* HOME */ /* HOME */
+
+/* SOBRE */ /* SOBRE */ /* SOBRE */ /* SOBRE */ /* SOBRE */ /* SOBRE */
+.about-section {
+  background: var(--cinza);
+  padding: 60px;
+}
+
+/* ESCONDE OS RADIOS */
+.about-section input {
+  display: none;
+}
+
+/* TABS */
+.tabs {
+  display: flex;
+  border: 10px solid var(--roxo);
+  border-radius: 12px 12px 0 0;
+  overflow: hidden;
+}
+
+.tab {
+  flex: 1;
+  text-align: center;
+  padding: 14px;
+  background: var(--branco);
+  cursor: pointer;
+  font-size: 26px;
+  transition: all 0.3s ease;
+}
+
+#tab-motivacoes {
+  border-right: 10px solid var(--roxo);
+  border-left: 10px solid var(--roxo);
+}
+
+/* HOVER */
+.tab:hover {
+  background: var(--roxo-claro);
+  color: var(--branco);
+  text-transform: uppercase;
+}
+
+/* TAB ATIVA */
+#tab-sobre:checked ~ .tabs label[for="tab-sobre"],
+#tab-motivacoes:checked ~ .tabs label[for="tab-motivacoes"],
+#tab-skills:checked ~ .tabs label[for="tab-skills"] {
+  background: var(--roxo-claro);
+  color: var(--branco);
+  text-transform: uppercase;
+}
+
+/* CONTEÚDO */
+.tab-content {
+  background: var(--branco);
+  border: 10px solid var(--roxo);
+  border-top: none;
+  border-radius: 0 0 12px 12px;
+  padding: 40px;
+  box-shadow: 0 8px 0 rgba(0, 0, 0, 0.15), inset 0 -4px 0 rgba(0, 0, 0, 0.05);
+}
+
+/* ESCONDE TODOS */
+.content {
+  display: none;
+  align-items: center;
+  gap: 40px;
+}
+
+/* MOSTRA O ATIVO */
+#tab-sobre:checked ~ .tab-content .sobre,
+#tab-motivacoes:checked ~ .tab-content .motivacoes,
+#tab-skills:checked ~ .tab-content .skills {
+  display: flex;
+}
+
+/* CARD AVATAR */
+.card {
+  background: var(--branco);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 0 rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  width: 180px;
+}
+
+/* TEXTO */
+.text h3 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.pet-logo {
+  display: flex;
+  align-items: center;
+  img {
+    margin-inline: 20px;
+  }
+}
+
+.text p,
+.motiv-text {
+  padding-left: 20px;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+/* PET */
+
+/* CONTAINER CLICÁVEL */
+.pet-toggle {
+  position: relative;
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+  perspective: 800px;
+}
+
+/* IMAGENS */
+.pet-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease;
+}
+
+/* FRENTE */
+.front {
+  transform: rotateY(0deg);
+}
+
+/* VERSO */
+.back {
+  transform: rotateY(180deg);
+}
+
+/* QUANDO CLICA */
+#toggle-pet:checked + .pet-toggle .front {
+  transform: rotateY(-180deg);
+}
+
+#toggle-pet:checked + .pet-toggle .back {
+  transform: rotateY(0deg);
+}
+
+/* SKILLS */
+.skills-list {
+  padding-left: 20px;
+  display: flex;
+  gap: 90px;
+  font-size: 24px;
+  p {
+    font-size: 30px;
+  }
+}

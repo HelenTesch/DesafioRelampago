@@ -11,7 +11,7 @@
   </head>
   <body>
     <header class="header">
-      <input type="checkbox" id="toggle-menu" class="toggle"/>
+      <input type="checkbox" id="toggle-menu" class="toggle" />
 
       <div class="menu-container">
         <label for="toggle-menu" class="logo">
@@ -29,9 +29,123 @@
         </nav>
       </div>
     </header>
+    <!-- ====================================================================================
+SEÇÃO HOME(HERO)
+===================================================================================== -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="hero-text">
+          <div class="hero-h1">
+            <h1>
+              TESCH<br />
+              H.
+            </h1>
+          </div>
+          <div class="hero-p">
+            <p class="role">Web Designer</p>
+          </div>
+          <div class="hero-buttons">
+            <a href="#sobre" class="btn">Sobre</a>
+            <a href="#portfolio" class="btn">Portfólio</a>
+            <a href="#contrate" class="btn">Contrate</a>
+            <a href="#servicos" class="btn">Serviços</a>
+          </div>
+        </div>
 
+        <div class="hero-image">
+          <img src="./imgs/EU NO STARDEW.png" alt="Avatar pixel art" />
+        </div>
+      </div>
+    </section>
+    <!-- =====================================================================================
+SEÇÃO SOBRE/MOTIVAÇÕES/SKILLS
+===================================================================================== -->
+    <section class="about-section" id="sobre">
+      <!-- CONTROLES -->
+      <input type="radio" name="tab" id="tab-sobre" checked />
+      <input type="radio" name="tab" id="tab-motivacoes" />
+      <input type="radio" name="tab" id="tab-skills" />
 
+      <!-- TÍTULOS -->
+      <div class="tabs">
+        <label for="tab-sobre" class="tab" id="tab-sobre">Sobre</label>
+        <label for="tab-motivacoes" class="tab" id="tab-motivacoes"
+          >Motivações</label
+        >
+        <label for="tab-skills" class="tab" id="tab-skills">Skills</label>
+      </div>
 
+      <!-- CONTEÚDO -->
+      <div class="tab-content">
+        <!-- SOBRE -->
+        <div class="content sobre">
+          <div class="card">
+            <img src="/novaTentativa/imgs/EU NO STARDEW.png" alt="Avatar" />
+          </div>
+
+          <div class="text">
+            <h3>Helen Dias Tesch</h3>
+            <p><strong>Idade:</strong> 21 anos</p>
+            <p>
+              <strong>Hobby:</strong> Stardew Valley, Minecraft e Adorar gatos
+            </p>
+            <div class="pet-logo">
+              <p class="pets"><strong>Pets:</strong></p>
+              <input type="checkbox" id="toggle-pet" />
+              <label for="toggle-pet" class="pet-toggle">
+                <img
+                  src="./imgs/Logo.png"
+                  alt="Gato"
+                  class="pet-img gato front"
+                />
+                <img
+                  src="./imgs/galinha.png"
+                  alt="Galinha"
+                  class="pet-img galinha back"
+                />
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- MOTIVAÇÕES -->
+        <div class="content motivacoes">
+          <div class="card">
+            <img src="/novaTentativa/imgs/EU NO STARDEW.png" alt="Avatar" />
+          </div>
+
+          <p class="motiv-text">
+            Um bom trabalho, café quentinho e meus pets bem cuidados.<br /><br />
+            Depois de me reencontrar no ramo da tecnologia, iniciei minha
+            jornada no Alpha EdTech rumo à carreira de programadora e aqui estou
+            eu!
+          </p>
+        </div>
+
+        <!-- SKILLS -->
+        <div class="content skills">
+          <div class="card">
+            <img src="/novaTentativa/imgs/EU NO STARDEW.png" alt="Avatar" />
+          </div>
+
+          <div class="skills-list">
+            <div>
+              <p>GIT</p>
+              <p>GITHUB</p>
+            </div>
+            <div>
+              <p>HTML</p>
+              <p>CSS</p>
+              <p>JAVASCRIPT</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================================
+PORTFÓLIO
+===================================================================================== -->
     <footer></footer>
   </body>
 </html>
