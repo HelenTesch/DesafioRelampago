@@ -332,3 +332,152 @@ header {
     font-size: 30px;
   }
 }
+
+/* SOBRE */ /* SOBRE */ /* SOBRE */ /* SOBRE */ /* SOBRE */ /* SOBRE */
+
+/* PORTFOLIO */ /* PORTIFOLIO */ /* PORTIFOLIO */ /* PORTIFOLIO */ /* PORTIFOLIO */ /* PORTIFOLIO */
+
+.portfolio {
+  text-align: center;
+  background-color: var(--branco);
+}
+
+.portfolio-title {
+  display: inline-block;
+  margin-top: 60px;
+  padding: 20px 200px;
+  font-size: 60px;
+  border-radius: 12px;
+  margin-bottom: 60px;
+  border: 10px solid var(--roxo);
+  box-shadow: 0 8px 0 rgba(0, 0, 0, 0.15), inset 0 -4px 0 rgba(0, 0, 0, 0.05);
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+
+/* CARD BASE */
+.project-card {
+  width: 280px;
+  height: 360px;
+  perspective: 1000px;
+  cursor: pointer;
+  border: 10px solid var(--roxo);
+  border-radius: 12px;
+  box-shadow: 0 8px 0 rgba(0, 0, 0, 0.15), inset 0 -4px 0 rgba(0, 0, 0, 0.05);
+  margin-bottom: 80px;
+}
+
+.project-card input {
+  display: none;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+}
+
+/* FLIP */
+.flip-toggle:checked + .card-inner {
+  transform: rotateY(180deg);
+}
+
+/* FACES */
+.card-face {
+  position: absolute;
+  inset: 0;
+  background: var(--branco);
+  border-radius: 16px;
+  backface-visibility: hidden;
+  box-shadow: 0 8px 0 rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+}
+
+.card-face img {
+  flex: 1;
+  width: 100%;
+  margin-top: 0px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-title {
+  width: 100%;
+  background: var(--cinza);
+  padding: 16px 0;
+  border-radius: 0 0 2px 2px;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--preto);
+}
+
+.card-front {
+  margin-top: 20px;
+}
+/* VERSO */
+.card-back {
+  transform: rotateY(180deg);
+}
+
+/* MODALLLLLL */
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 2000;
+}
+
+.modal:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-content {
+  background: var(--branco);
+  width: 90%;
+  max-width: 900px;
+  height: 80vh;
+  border: 6px solid var(--roxo);
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-shadow: 0 8px 0 rgba(0, 0, 0, 0.15);
+}
+
+.modal-content iframe {
+  flex: 1;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 32px;
+  text-decoration: none;
+  color: var(--roxo);
+}
+
+.close:hover {
+  color: var(--roxo-claro);
+}
+
+/* PORTFOLIO */ /* PORTIFOLIO */ /* PORTIFOLIO */ /* PORTIFOLIO */ /* PORTIFOLIO */ /* PORTIFOLIO */
