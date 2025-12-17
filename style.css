@@ -1,0 +1,74 @@
+:root {
+  --roxo: #331e4d;
+  --roxo-claro: #802e99;
+  --cinza: #b4b4b4;
+  --preto: #222;
+  --branco: #fff;
+  --font-family: "Pixelify Sans", sans-serif;
+}
+
+body {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+header {
+  width: 100%;
+  background: var(--cinza);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* esconde o checkbox */
+.toggle{
+  display: none;
+}
+
+.menu-container {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* LOGO */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 20px;
+  cursor: pointer;
+}
+
+.logo img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.logo span {
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* MENU */
+.nav {
+  display: flex;
+  gap: 30px;
+  max-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: max-width 0.5s ease;
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--preto);
+  font-size: 18px;
+  letter-spacing: 4px;
+}
+
+/* QUANDO CLICA NA LOGO */
+#toggle-menu:checked ~ .menu-container .nav {
+  max-width: 700px; /* controla o quanto expande */
+}
