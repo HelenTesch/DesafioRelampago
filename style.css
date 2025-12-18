@@ -127,6 +127,9 @@ header {
 .hero-buttons {
   display: flex;
   gap: 20px;
+  a{
+  font-size: 18px;
+  }
 }
 
 .btn {
@@ -134,8 +137,6 @@ header {
   color: var(--preto);
   padding: 10px 22px;
   border-radius: 20px;
-  text-decoration: none;
-  font-size: 18px;
   letter-spacing: 2px;
   transition: background-color 0.3s ease-in-out, color 0.3s ease,
     transform 0.15s ease;
@@ -504,7 +505,7 @@ header {
   background: var(--roxo-claro);
   color: var(--branco);
   padding: 16px 0;
-  font-size: 30px;
+  font-size: 2.5rem;
   text-transform: uppercase;
   text-align: center;
 }
@@ -518,7 +519,7 @@ header {
   padding: 32px;
   cursor: pointer;
   border-top: 10px solid var(--roxo);
-  font-size: 20px;
+  font-size: 1.8rem;
   transition: all 0.3s ease;
 }
 
@@ -531,6 +532,9 @@ header {
   overflow: hidden;
   padding: 0 32px;
   transition: max-height 0.4s ease, padding 0.3s ease;
+  p{
+    font-size: 1.5rem;
+  }
 }
 
 input:checked + .service-title {
@@ -646,3 +650,173 @@ input:checked + .service-title + .service-content {
 }
 
 /* OPINIÕES */ /* OPINIÕES */ /* OPINIÕES */ /* OPINIÕES */ /* OPINIÕES */ /* OPINIÕES */
+
+/* CONTRATE */ /* CONTRATE */ /* CONTRATE */ /* CONTRATE */ /* CONTRATE */ /* CONTRATE */
+
+.contrate {
+  padding: 80px 20px;
+}
+
+.contrate-box {
+  background: var(--branco);
+  border: 10px solid var(--roxo);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 0 rgba(0, 0, 0, 0.15);
+}
+
+.contrate-header {
+  background: var(--roxo-claro);
+  color: var(--branco);
+  padding: 16px 0;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 10px solid var(--roxo);
+}
+
+/* Conteúdos */
+.conteudo {
+  inset: 0;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Esconde a tela de sucesso inicialmente */
+.sucesso {
+  display: none;
+}
+
+.imagem img {
+  width: 140px;
+  border-radius: 6px;
+}
+
+.form,
+.mensagem {
+  flex: 1;
+}
+
+h2 {
+  margin-bottom: 14px;
+  color: var(--preto);
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 2px solid var(--cinza);
+  border-radius: 20px;
+  font-size: 1rem;
+}
+
+textarea {
+  height: 70px;
+  resize: none;
+}
+
+/* Botões */
+.btn {
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.enviar {
+  background: var(--verde);
+  color: none;
+}
+
+.cinza {
+  background: var(--cinza);
+  color: var(--preto);
+}
+
+.branco {
+  background: var(--branco);
+  border: 2px solid var(--cinza);
+  color: var(--preto);
+}
+
+.acoes {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+/* ====== ESTADO ENVIADO ====== */
+#enviado:checked ~ .contrate .formulario {
+  display: none;
+}
+
+#enviado:checked ~ .contrate .sucesso {
+  display: flex;
+}
+
+#enviado:checked ~ .contrate .enviar {
+  background: var(--cinza);
+}
+
+/* CONTRATE */ /* CONTRATE */ /* CONTRATE */ /* CONTRATE */ /* CONTRATE */ /* CONTRATE */
+
+/* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */
+
+footer {
+  background: var(--roxo);
+  color: var(--branco);
+  height: 150px;
+}
+
+/* CONTEÚDO PRINCIPAL */
+.footer-container {
+  /* max-width: 1100px; */
+  /* margin: 0 auto; */
+  /* height: 100%; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* margin: 2px 0; */
+}
+
+/* LOGO */
+.footer-logo img {
+  width: 110px;
+}
+
+.vazia {
+  width: 110px;
+}
+.footer-col {
+  text-align: center;
+}
+
+/* COLUNAS */
+.footer-col h3 {
+  font-size: 18px;
+  /* margin-bottom: 6px; */
+}
+
+.footer-col p {
+  font-size: 14px;
+  /* margin: 2px 0; */
+  color: var(--branco);
+}
+
+/* RODAPÉ (AGORA DENTRO DO ROXO) */
+.footer-bottom {
+  text-align: center;
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+/* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */
+
+/* 

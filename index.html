@@ -80,7 +80,7 @@ SEÇÃO SOBRE/MOTIVAÇÕES/SKILLS
         <!-- SOBRE -->
         <div class="content sobre">
           <div class="card">
-            <img src="/novaTentativa/imgs/EU NO STARDEW.png" alt="Avatar" />
+            <img src="/imgs/EU NO STARDEW.png" alt="Avatar" />
           </div>
 
           <div class="text">
@@ -111,7 +111,7 @@ SEÇÃO SOBRE/MOTIVAÇÕES/SKILLS
         <!-- MOTIVAÇÕES -->
         <div class="content motivacoes">
           <div class="card">
-            <img src="/novaTentativa/imgs/EU NO STARDEW.png" alt="Avatar" />
+            <img src="/imgs/EU NO STARDEW.png" alt="Avatar" />
           </div>
 
           <p class="motiv-text">
@@ -125,7 +125,7 @@ SEÇÃO SOBRE/MOTIVAÇÕES/SKILLS
         <!-- SKILLS -->
         <div class="content skills">
           <div class="card">
-            <img src="/novaTentativa/imgs/EU NO STARDEW.png" alt="Avatar" />
+            <img src="/imgs/EU NO STARDEW.png" alt="Avatar" />
           </div>
 
           <div class="skills-list">
@@ -143,7 +143,7 @@ SEÇÃO SOBRE/MOTIVAÇÕES/SKILLS
       </div>
     </section>
 
-  <!-- =====================================================================================
+    <!-- =====================================================================================
 PORTFÓLIO
 ===================================================================================== -->
 
@@ -158,14 +158,14 @@ PORTFÓLIO
           <div class="card-inner">
             <!-- FRENTE -->
             <div class="card-face card-front">
-              <img src="/novaTentativa/imgs/Logo.png" alt="Projeto 1" />
+              <img src="/imgs/Logo.png" alt="Projeto 1" />
               <span class="project-title">Projeto</span>
             </div>
 
             <!-- VERSO -->
             <div class="card-face card-back">
               <img
-                src="/novaTentativa/imgs/Página1.png"
+                src="/imgs/Página1.png"
                 alt="Projeto 1 Detalhe"
               />
               <a href="#modal-tenhagatos" class="project-title"> TenhaGatos </a>
@@ -179,13 +179,13 @@ PORTFÓLIO
 
           <div class="card-inner">
             <div class="card-face card-front">
-              <img src="/novaTentativa/imgs/Logo.png" alt="Projeto 2" />
+              <img src="/imgs/Logo.png" alt="Projeto 2" />
               <span class="project-title">Projeto</span>
             </div>
 
             <div class="card-face card-back">
               <img
-                src="/novaTentativa/imgs/Página2.png"
+                src="/imgs/Página2.png"
                 alt="Projeto 2 Detalhe"
               />
               <a href="#modal-ascendencia" class="project-title">
@@ -196,7 +196,7 @@ PORTFÓLIO
         </label>
       </div>
     </section>
-       <!-- ===============================
+    <!-- ===============================
  SERVIÇOS
  ========================== -->
 
@@ -238,7 +238,7 @@ PORTFÓLIO
       </div>
     </section>
 
-       <!-- ===============================
+    <!-- ===============================
  OPINIÕES
  ========================== -->
 
@@ -287,8 +287,103 @@ PORTFÓLIO
         </label>
       </div>
     </section>
+    <!-- ===============================
+ CONTRATE
+ ========================== -->
 
+    <!-- =======================
+   -->
+    <!-- Checkbox controlador -->
+    <input type="checkbox" id="enviado" hidden />
 
-    <footer></footer>
+    <section class="contrate" id="contrate">
+      <div class="contrate-box">
+        <div class="contrate-header">Contrate meus serviços</div>
+        <!-- TELA 1 -->
+        <div class="conteudo formulario">
+          <div class="imagem">
+            <img src="./imgs/portrait.png" alt="Avatar vazio" />
+          </div>
+
+          <div class="form">
+            <h2>Faça seu orçamento</h2>
+
+            <input type="text" placeholder="Nome" />
+            <input type="email" placeholder="E-mail" />
+            <textarea placeholder="Mensagem"></textarea>
+
+            <label for="enviado" class="btn enviar"> Enviar </label>
+          </div>
+        </div>
+
+        <!-- TELA 2 -->
+        <div class="conteudo sucesso">
+          <div class="imagem">
+            <img src="./imgs/EU NO STARDEW.png" alt="Avatar mulher" />
+          </div>
+
+          <div class="mensagem">
+            <h2>Mensagem recebida!</h2>
+            <p>Muito obrigada e volte sempre!</p>
+            <p>Não perca novas atualizações! 😉</p>
+
+            <div class="acoes">
+              <label for="enviado" class="btn cinza">Enviar</label>
+              <a href="#" class="btn branco">Home</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===============================
+ FOOTER
+ ========================== -->
+
+    <!-- =======================
+   -->
+    <footer id="footer">
+      <div class="footer-container">
+        <!-- LOGO -->
+        <div class="footer-logo">
+          <img src="./imgs/Logo.png" alt="Logo" />
+        </div>
+
+        <!-- CONTATOS -->
+        <div class="footer-col">
+          <h3 id="contatos">CONTATOS</h3>
+          <p class="email">helenditesch@gmail.com</p>
+          <p class="phone">(73) 9 9806-2414</p>
+        </div>
+        <div class="vazia"></div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>TESCH H. © 2025</p>
+      </div>
+    </footer>
+
+    <!-- MODAL TENHAGATOS -->
+    <div id="modal-tenhagatos" class="modal">
+      <div class="modal-content">
+        <a href="#" class="close">&times;</a>
+
+        <h2>TenhaGatos</h2>
+
+        <iframe src="https://helentesch.github.io/PROJETOCSS1/#" loading="lazy">
+        </iframe>
+      </div>
+    </div>
+
+    <!-- MODAL ASCENDÊNCIA -->
+    <div id="modal-ascendencia" class="modal">
+      <div class="modal-content">
+        <a href="#" class="close">&times;</a>
+
+        <h2>Ascendência Felina</h2>
+
+        <iframe src="https://helentesch.github.io/PROJETOCSS2/" loading="lazy"> </iframe>
+      </div>
+    </div>
   </body>
 </html>
