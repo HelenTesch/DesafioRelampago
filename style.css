@@ -342,7 +342,10 @@ header {
 .portfolio {
   text-align: center;
   background-color: var(--branco);
+  
 }
+
+
 
 .portfolio-title {
   display: inline-block;
@@ -839,6 +842,7 @@ footer {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 20px;
   }
 
   /* Ajuste específico para o Hero em telas grandes */
