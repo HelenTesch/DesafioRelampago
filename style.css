@@ -820,3 +820,178 @@ footer {
 /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */
 
 /* 
+
+============================================================
+   RESPONSIVIDADE 
+   ============================================================ */
+
+   /* 1. CONTAINER PARA TELAS GRANDES (> 1024px) */
+@media (min-width: 1025px) {
+  /* Limita a largura do conteúdo para não esticar infinitamente */
+  .hero-content,
+  .about-section,
+  .portfolio,
+  .services,
+  .opinioes,
+  .contrate-box,
+  .footer-container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Ajuste específico para o Hero em telas grandes */
+  .hero-text h1 {
+    font-size: 120px; /* Reduzi um pouco dos 150px para caber melhor */
+  }
+}
+
+/* Tablets e Telas Médias (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .hero-text h1 {
+    font-size: 80px; /* Reduzindo o título gigante */
+  }
+  
+  .projects {
+    flex-wrap: wrap; /* Faz os cards quebrarem a linha */
+    gap: 40px;
+  }
+
+  .portfolio-title, .opinioes-title {
+    padding: 20px 50px;
+    font-size: 40px;
+  }
+}
+
+/* Celulares e Telas Pequenas (max-width: 768px) */
+@media (max-width: 768px) {
+  
+  /* HEADER / NAV */
+  .nav {
+    flex-wrap: wrap;
+    gap: 15px;
+    max-height: 79px;
+  }
+  
+  .nav a {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+
+  /* HERO (HOME) */
+  .hero {
+    padding: 40px 20px;
+  }
+
+  .hero-content {
+    flex-direction: column-reverse; /* Imagem em cima do texto no mobile */
+    text-align: center;
+    gap: 30px;
+  }
+
+  .hero-text h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .hero-h1 {
+    text-align: center;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+      flex-wrap: wrap;
+  }
+
+  /* SOBRE (TABS) */
+  .tabs {
+    flex-direction: column; /* Tabs viram empilhadas */
+    border-bottom: none;
+  }
+
+  .tab {
+    border-bottom: 5px solid var(--roxo) !important;
+    border-right: none !important;
+    border-left: none !important;
+  }
+
+  .tab-content {
+    padding: 20px;
+  }
+
+  .content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text p, .motiv-text {
+    padding-left: 0;
+    font-size: 16px;
+  }
+
+  .skills-list {
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 0;
+  }
+
+  /* PORTFOLIO & OPINIÕES */
+  .portfolio-title, .opinioes-title {
+    font-size: 28px;
+    padding: 15px 30px;
+    width: 80%;
+  }
+
+  /* CONTRATE (FORMULÁRIO) */
+  .conteudo {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .imagem img {
+    width: 100px;
+  }
+
+  .acoes {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  /* FOOTER */
+  .footer-container {
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+  }
+
+  footer {
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .vazia {
+    display: none; /* Remove espaço desnecessário no mobile */
+  }
+}
+
+/* Ajustes Extras para Celulares Pequenos (max-width: 480px) */
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 40px;
+  }
+  
+  .role {
+    font-size: 24px;
+  }
+
+  .project-card {
+    width: 100%; /* Card ocupa a largura quase toda */
+    max-width: 280px;
+  }
+  
+  .service-title {
+    font-size: 16px;
+    padding: 20px;
+  }
+}
